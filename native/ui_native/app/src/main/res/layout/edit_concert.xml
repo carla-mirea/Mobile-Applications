@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/confetti_background"
+    tools:context=".service.EditConcert">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="125dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:layout_constraintTop_toBottomOf="@id/logoImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/editConcertTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_black"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="@string/titleEditForm"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/idField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputIdField"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nameField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputNameField"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputDescriptionField"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dateField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputDateField"
+                android:inputType="date"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/locationField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputLocationField"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/performersField"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginBottom="4dp" />
+
+            <EditText
+                android:id="@+id/editConcertPerformers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edit_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/inputPerformersField"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#B7B7B7"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/rounded_button_background"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/saveButton"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancelButtonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/rounded_button_background"
+                android:backgroundTint="#414953"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/cancelButton"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

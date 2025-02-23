@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Concertify</string>
+
+    <string name="deleteMessage">Are you sure you want to delete?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="discover">Discover</string>
+    <string name="addButton">Add</string>
+
+    <string name="titleAddForm">ADD CONCERT</string>
+    <string name="createButton">CREATE</string>
+
+    <string name="titleEditForm">EDIT CONCERT</string>
+    <string name="idField">ID</string>
+    <string name="inputIdField">Concert ID</string>
+    <string name="saveButton">SAVE</string>
+
+    <string name="nameField">Name</string>
+    <string name="inputNameField">Enter Concert Name</string>
+    <string name="descriptionField">Description</string>
+    <string name="inputDescriptionField">Enter Concert Description</string>
+    <string name="dateField">Date (yyyy-MM-dd)</string>
+    <string name="inputDateField">Enter Concert Date</string>
+    <string name="locationField">Location</string>
+    <string name="inputLocationField">Enter Concert Location</string>
+    <string name="performersField">Performers (separated by \", \")</string>
+    <string name="inputPerformersField">Enter Concert Performers List</string>
+
+    <string name="cancelButton">CANCEL</string>
+
+    <string name="concertTitleCard">Concert Title</string>
+    <string name="concertDescriptionCard">Description</string>
+    <string name="concertLocationCard">Location</string>
+    <string name="concertDateCard">Date</string>
+    <string name="concertPerformersCard">Performers</string>
+    <string name="editButton">Edit</string>
+    <string name="deleteButton">Delete</string>
+
+</resources>

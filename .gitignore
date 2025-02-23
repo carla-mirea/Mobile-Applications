@@ -1,0 +1,7 @@
+
+native/ui_native/settings.gradle.kts
+native/ui_native/app/build.gradle.kts
+native/ui_native/build.gradle.kts
+non_native/android/app/build.gradle
+non_native/android/build.gradle
+non_native/android/gradle.properties
